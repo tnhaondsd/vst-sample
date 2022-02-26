@@ -1,122 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" type="image/png" href="lg22.jpg"/>
+    <link rel="shortcut icon" type="image/png" href="lg22.jpg"/> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHARE VST SAMPLE FREE</title>
-    <link rel="stylesheet" href="stylespost2.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-
-     <!--BACKTOTOP-->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i> TOP</button>
-
-  <style>
-  
-  #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 10px;
-      right: 120px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: red;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-  </style>
-  
-  
-  <script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 500) {
-          document.getElementById("myBtn").style.display = "block";
-      } else {
-          document.getElementById("myBtn").style.display = "none";
-      }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-  }
-  </script>
-
-<!--CODE BACKTO TOP-->
-  </head>
+      crossorigin="anonymous"/>
+     </head>
   <body>
-   
-        <!-- POUPUP-->
+    <!-- POUPUP-->
+      <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <style type="text/css">
+    #popup-giua-man-hinh .headerContainer,
+    #popup-giua-man-hinh .bodyContainer,
+    #popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
+    #popup-giua-man-hinh .padding{padding:20px}
+    #popup-giua-man-hinh .bodyContainer{min-height:500px}
+    #popup-giua-man-hinh .popUpBannerBox{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:100%;top:0;left:0;color:#FFF;z-index:999999;display:none}
+    #popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
+    #popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
+    #popup-giua-man-hinh .closeButton{color:red;text-decoration:none;font-size:18px}
+    #popup-giua-man-hinh a.closeButton{float:right}
+    </style>
+    <div id="popup-giua-man-hinh">
+    <div class="popUpBannerBox">
+     <div class="popUpBannerInner">
+      <div class="popUpBannerContent">
+       <p><a href="#" class="closeButton">Đóng</a></p>
+           <img src="PPadmin.png" />
+      </div>
+     </div>
+    </div>
+    <script type="text/javascript">
+     function showPopUpBanner() {
+      $('.popUpBannerBox').fadeIn("2000");
+     }
+     setTimeout(showPopUpBanner, 1000); //thời gian popup bắt đầu hiển thị
     
-
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <style type="text/css">
-        #popup-giua-man-hinh .headerContainer,
-        #popup-giua-man-hinh .bodyContainer,
-        #popup-giua-man-hinh .footerContainer{max-width:960px;margin:0 auto;background:#FFF}
-        #popup-giua-man-hinh .padding{padding:20px}
-        #popup-giua-man-hinh .bodyContainer{min-height:500px}
-        #popup-giua-man-hinh .popUpBannerBox{position:fixed;background:rgba(0,0,0,0.9);width:100%;height:100%;top:0;left:0;color:#FFF;z-index:999999;display:none}
-        #popup-giua-man-hinh .popUpBannerInner{max-width:300px;margin:0 auto}
-        #popup-giua-man-hinh .popUpBannerContent{position:fixed;top:150px}
-        #popup-giua-man-hinh .closeButton{color:red;text-decoration:none;font-size:18px}
-        #popup-giua-man-hinh a.closeButton{float:right}
-        </style>
-        <div id="popup-giua-man-hinh">
-        <div class="popUpBannerBox">
-         <div class="popUpBannerInner">
-          <div class="popUpBannerContent">
-           <p><a href="#" class="closeButton">Đóng</a></p>
-        
-         
-        
-               <img src="PPadmin.gif" />
-        
-         
-          </div>
-         </div>
-        </div>
-        <script type="text/javascript">
-         function showPopUpBanner() {
-          $('.popUpBannerBox').fadeIn("2000");
-         }
-         setTimeout(showPopUpBanner, 1000); //thời gian popup bắt đầu hiển thị
-        
-         $('.popUpBannerBox').click(function(e) {
-          if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
-           $('.popUpBannerBox').fadeOut("2000");
-           return false;
-          }
-         });
-         $('.closeButton').click(function() {
-          $('.popUpBannerBox').fadeOut("2000");
-          return false;
-         });
-        </script>
-        </div>
-        
-        <!-- poupup-->
-     <!-- Navbar Section -->
-     <nav class="navbar">
+     $('.popUpBannerBox').click(function(e) {
+      if ( !$(e.target).is('.popUpBannerContent, .popUpBannerContent *' ) ) {
+       $('.popUpBannerBox').fadeOut("2000");
+       return false;
+      }
+     });
+     $('.closeButton').click(function() {
+      $('.popUpBannerBox').fadeOut("2000");
+      return false;
+     });
+    </script>
+    </div>
+    
+    <!-- poupup-->
+  
+    <!-- MESS PLUGINS-->
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101114085503543");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Navbar Section -->
+    <nav class="navbar">
       <div class="navbar__container">
-        <a href="hhttps://tnhaondsd.github.io/vst-sample/" id="navbar__logo">VST SAMPLE FREE</a>
+        <a href="https://tnhaondsd.github.io/vst-sample/" id="navbar__logo">VST SAMPLE FREE</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span> 
@@ -126,31 +94,32 @@
             <a href="https://tnhaondsd.github.io/vst-sample/" class="navbar__links" id="home-page">HOME</a>
           </li>
           <li class="navbar__item">
-            <a href="daws.html" class="navbar__links" id="about-page">DAWS </a>
+            <a href="#daws" class="navbar__links" id="about-page">DAWS </a>
           </li>
           
           <li class="navbar__item">
-            <a href="https://tnhaondsd.github.io/vst-sample/" class="navbar__links" id="services-page"
+            <a href="#vst" class="navbar__links" id="services-page"
               >VST/VSTi</a>
           </li>
           <li class="navbar__item">
-            <a href="https://tnhaondsd.github.io/vst-sample/" class="navbar__links" id="service-page"
+            <a href="#banks" class="navbar__links" id="service-page"
               >BANKS</a>
           </li>
           <li class="navbar__item">
-            <a href="samplepacks.html" class="navbar__links" id="services-page"
-              >SAMPLE PACKS</a>
+            <a href="#samplepacks" class="navbar__links" id="services-page"
+              >SAMPLE PACKS </a>
           </li>
           <li class="navbar__item">
-            <a href="vip.html" class="navbar__links" id="service-page"
+            <a href="#VIP" class="navbar__links" id="service-page"
               >VIP</a>
           </li>
           <li class="navbar__btn">
-            <a href="https://tnhaondsd.github.io/vst-sample/" class="button" id="signup">CONTACT</a>
+            <a href="#contact" class="button" id="signup">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
+
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero__container">
