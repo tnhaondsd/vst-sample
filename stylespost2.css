@@ -254,9 +254,6 @@
   -moz-text-fill-color: transparent;
 }
 
-.highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
-}
 
 @media screen and (max-width: 768px) {
   .hero__heading {
